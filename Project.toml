@@ -1,0 +1,4 @@
+name = "aoc2019"
+uuid = "c794d1b4-1537-11ea-1b4c-5f50926ad4a2"
+authors = ["watsonjj <jason.jw@live.co.uk>"]
+version = "0.1.0"

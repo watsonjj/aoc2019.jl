@@ -59,39 +59,4 @@ function get_answers(; benchmark=false)
     df
 end
 
-
-
-# function get_answer(day::Int, part::Int)
-#     func = answers[day, part]
-#     input = inputs[day, part]
-#     func(input)
-# end
-#
-# function print_day_answer(day::Int)
-#     answer1 = get_answer(day, 1)
-#     answer2 = get_answer(day, 2)
-#     day_string = "d$(lpad(string(day), 2, "0"))"
-#     println("Day: $day_string, Answer1: $answer1, Answer2: $answer2")
-# end
-#
-# function print_all_answers()
-#     for day in days
-#         print_day_answer(day)
-#     end
-# end
-#
-# formatTime(t) = BenchmarkTools.prettytime(1e9 * t)
-#
-# function benchmark()
-#     df = DataFrame(part1 = String[], part2 = String[])
-#     for day in days
-#
-#         m = getproperty(@__MODULE__, Symbol("day$day"))
-#         t1 = onlyOnce ? @elapsed(m.part1((m.input))) : @belapsed($m.part1($(m.input)))
-#         t2 = onlyOnce ? @elapsed(m.part2((m.input))) : @belapsed($m.part2($(m.input)))
-#         push!(df, formatTime.((t1, t2)))
-#     end
-#     df
-# end
-
 end # module
